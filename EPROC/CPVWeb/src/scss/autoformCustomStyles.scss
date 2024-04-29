@@ -1,0 +1,42 @@
+.autoFormCustom .badge {
+  width: 50px;
+  height: auto;
+  background-color: $gray-900;
+}
+
+.autoFormCustom .badge .octicon-plus:before {
+  color: #fefefe;
+  line-height: 1.2;
+  margin: 5px;
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  content: "\f067";
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 900;
+  font-size: 14px;
+}
+
+.autoFormCustom .badge .octicon-dash:before {
+  color: #fefefe;
+  line-height: 1.2;
+  margin: 5px;
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  content: "\f2ed";
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 900;
+  font-size: 16px;
+}
+
+.autoFormCustom .form-group {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.autoFormCustom label {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-size: 17px;
+}

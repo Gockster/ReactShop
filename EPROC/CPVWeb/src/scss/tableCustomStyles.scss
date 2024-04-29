@@ -1,0 +1,74 @@
+.stickyLastColumn {
+	min-height: 300px;
+}
+//
+//.stickyLastColumn table {
+//    table-layout: fixed;
+//}
+
+.stickyLastColumn table .thead-light th {
+	background-color: $kimdisBarColor;
+	color: #fefefe;
+	text-transform: none;
+}
+
+div.stickyLastColumn > table > thead > tr > th:last-child {
+	position: sticky;
+	right: 0;
+	text-align: center;
+	width: 150px !important;
+	max-width: 150px !important;
+	background-color: $yellow;
+	box-shadow: 0 0 0.1em rgba(0, 0, 0, 0.1);
+	outline: 0;
+	color: #fefefe;
+}
+
+div.nonActionDatatable > table > thead > tr > th:last-child {
+	background-color: $kimdisBarColor;
+}
+
+div.nonActionDatatable > table > thead > tr > th:last-child::before {
+	font-family: sans-serif;
+	content: unset !important;
+	margin-right: initial;
+}
+
+div.stickyLastColumn > table > thead > tr > th:last-child::before {
+	font-family: "Font Awesome 5 Brands", sans-serif;
+	content: "\f837";
+	margin-right: 10px;
+}
+
+div.stickyLastColumn > table > tbody > tr > td:last-child {
+	position: sticky;
+	right: 0;
+	text-align: center;
+	width: 40px;
+	background-color: #fefefe;
+	box-shadow: 0 0 0.1em rgba(0, 0, 0, 0.1);
+	outline: 0;
+
+	// Bypasses default behavior of volt-react-dashboard theme
+	// that computes positions, leading popup menu to be rendered not smoothy
+	.show .dropdown-menu {
+		transform: translate(-270px, 31px) !important;
+	}
+}
+
+.centerContent {
+	width: 100% !important;
+	height: 200px !important;
+	display: flex !important;
+	justify-content: center !important;
+	align-items: center !important;
+	align-content: center !important;
+}
+
+.selectedTableRow {
+	background-color: rgba(255, 193, 7, 0.37);
+}
+
+div.stickyLastColumn > table > tbody > tr.selectedTableRow > td:last-child {
+	background-color: rgba(255, 193, 7, 0.37);
+}

@@ -1,0 +1,17 @@
+.accordion-dark .accordion-button:not(.collapsed) {
+    color: $white;
+    background-color: $gray-900;
+
+    span {
+        color: $white;
+    }
+}
+
+.accordion-dark .accordion-button.collapsed {
+    color: $white;
+    background-color: $gray-600;
+
+    span {
+        color: $white;
+    }
+}

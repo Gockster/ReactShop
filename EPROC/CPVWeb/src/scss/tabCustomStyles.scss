@@ -1,0 +1,35 @@
+.customTabColor .nav-link {
+  border: 0;
+  padding:1rem 1rem;
+
+  &.active{
+    color: $white;
+    background-color: $yellow;
+  }
+  &:not(.active){
+    color: $white;
+    background-color: $gray-600;
+  }
+  
+}
+@media print {
+  .hidden-print {
+    display: none !important;
+
+  }
+  .grecaptcha-badge {
+    display: none !important;
+  }
+  .print-description{
+    border-style: none;
+    border-color: transparent;
+    overflow: auto;
+    resize: none;
+  }
+
+}
+
+label.required::after {
+  content: "*";
+  color: red;
+}
